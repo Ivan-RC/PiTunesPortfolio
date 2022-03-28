@@ -15,7 +15,7 @@ High-level solution of the problem
 --------------------------------
 The user can speak to the Raspberry Pi through a USB mic connected to it. However, before being able to give the device any kind of command, the user must "wake it up" by saying 'Hey Iris'. After that, the user will provide any string of words to the application (on the Raspberry Pi) and it will go and do something depending on the command. The Raspberry Pi will speak back to the User once a valid, or invalid, command have been received through a speaker connected by 3.5 mm jack. The application will process the user's speech, do what the user requested, and let the user know what it did. 
 
-![alt text](https://github.com/Ivan-RC/PiTunes/blob/main/images/highlevelsolution.PNG)
+![alt text](https://github.com/Ivan-RC/PiTunesPortfolio/blob/main/images/highlevelsolution.PNG)
 <!--Wake up image -->
 <!--[alt text](https://raw.githubusercontent.com/Ivan-RC/PiTunes/main/images/wakeup.PNG?token=GHSAT0AAAAAABQMCIZ5SVW4R2YAPWLFIGVIYQRKRIA)-->
 
@@ -58,8 +58,8 @@ System Design
 ---------------------------------
 <table>
     <tr>
-        <td align="center"><b>Physical Architecture</b><br/><img src="https://github.com/Ivan-RC/PiTunes/blob/main/images/physicaldiagram.PNG"/></td>
-        <td align="center"><b>Logical Architecture</b><br/><img src="https://github.com/Ivan-RC/PiTunes/blob/main/images/logicaldiagram.PNG"/></td>
+        <td align="center"><b>Physical Architecture</b><br/><img src="https://github.com/Ivan-RC/PiTunesPortfolio/blob/main/images/logicaldiagram.PNG"/></td>
+        <td align="center"><b>Logical Architecture</b><br/><img src="https://github.com/Ivan-RC/PiTunesPortfolio/blob/main/images/logicaldiagram.PNG"/></td>
     </tr>
 </table>
 
