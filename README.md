@@ -58,7 +58,7 @@ System Design
 ---------------------------------
 <table>
     <tr>
-        <td align="center"><b>Physical Architecture</b><br/><img src="https://github.com/Ivan-RC/PiTunesPortfolio/blob/main/images/logicaldiagram.PNG"/></td>
+        <td align="center"><b>Physical Architecture</b><br/><img src="https://github.com/Ivan-RC/PiTunesPortfolio/blob/main/images/physicaldiagram.PNG"/></td>
         <td align="center"><b>Logical Architecture</b><br/><img src="https://github.com/Ivan-RC/PiTunesPortfolio/blob/main/images/logicaldiagram.PNG"/></td>
     </tr>
 </table>
