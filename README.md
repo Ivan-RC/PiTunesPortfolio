@@ -9,15 +9,13 @@
 
 Introduction
 --------------------------------
-For the project, the team will be programming a music player using a raspberry pi that can be controlled with the user's voice. It will not have a display, making it a "headless" pi. This project is based around music and making it more convenient to listen to. It has always been a struggle for most people to find a convenient way to listen to music, and that is the problem the team wishes to solve. 
+For the project, the team will be programming a music player using a raspberry pi that can be controlled with the user's voice. It will not have a display or any sort of frontend, making it a "headless" pi. This project is based around music and making it more convenient to listen to. It has always been a struggle for most people to find a convenient way to listen to music, and that is the problem the team wishes to solve. 
 
 High-level solution of the problem
 --------------------------------
 The user can speak to the Raspberry Pi through a USB mic connected to it. However, before being able to give the device any kind of command, the user must "wake it up" by saying 'Hey Iris'. After that, the user will provide any string of words to the application (on the Raspberry Pi) and it will go and do something depending on the command. The Raspberry Pi will speak back to the User once a valid, or invalid, command have been received through a speaker connected by 3.5 mm jack. The application will process the user's speech, do what the user requested, and let the user know what it did. 
 
 ![alt text](https://github.com/Ivan-RC/PiTunesPortfolio/blob/main/images/highlevelsolution.PNG)
-<!--Wake up image -->
-<!--[alt text](https://raw.githubusercontent.com/Ivan-RC/PiTunes/main/images/wakeup.PNG?token=GHSAT0AAAAAABQMCIZ5SVW4R2YAPWLFIGVIYQRKRIA)-->
 
 Features
 --------------------------------
@@ -30,6 +28,19 @@ Features
 - Shuffle
 - Control volume
 - Seek
+
+UML Diagrams
+---------------------------------
+<table>
+    <tr>
+        <td align="center"><b>Wake up the System</b><br/><img src="https://github.com/Ivan-RC/PiTunesPortfolio/blob/main/images/wakeup.PNG"/></td>
+        <td align="center"><b>Play Song</b><br/><img src="https://github.com/Ivan-RC/PiTunesPortfolio/blob/main/images/playsong.PNG"/></td>
+    </tr>
+    <tr>
+        <td align="center"><b>Pause Song</b><br/><img src="https://github.com/Ivan-RC/PiTunesPortfolio/blob/main/images/pausesong.PNG"/></td>
+        <td align="center"><b>Play album/playlist</b><br/><img src="https://github.com/Ivan-RC/PiTunesPortfolio/blob/main/images/playalbumplaylist.PNG"/></td>
+    </tr>
+</table>
 
 Hardware
 --------------------------------
@@ -62,7 +73,6 @@ System Design
         <td align="center"><b>Logical Architecture</b><br/><img src="https://github.com/Ivan-RC/PiTunesPortfolio/blob/main/images/logicaldiagram.PNG"/></td>
     </tr>
 </table>
-
 <!--
     - Capable of running any number of Web Servers, common Web Stacks, Databases, and Tools. Examples include:
         - Web Servers: Nginx and Apache (can be used to host  too)
