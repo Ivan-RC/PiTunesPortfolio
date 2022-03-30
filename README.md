@@ -29,7 +29,7 @@ Features
 - Control volume
 - Seek
 
-UML Diagrams
+Flowcharts
 ---------------------------------
 <table>
     <tr>
@@ -40,18 +40,43 @@ UML Diagrams
         <td align="center"><b>Pause Song</b><br/><img src="https://github.com/Ivan-RC/PiTunesPortfolio/blob/main/images/pausesong.PNG"/></td>
         <td align="center"><b>Play album/playlist</b><br/><img src="https://github.com/Ivan-RC/PiTunesPortfolio/blob/main/images/playalbumplaylist.PNG"/></td>
     </tr>
+    <tr>
+        <td align="center"><b>Next Song</b><br/><img src="https://github.com/Ivan-RC/PiTunesPortfolio/blob/main/images/next.PNG"/></td>
+        <td align="center"><b>Previous Song</b><br/><img src="https://github.com/Ivan-RC/PiTunesPortfolio/blob/main/images/previous.PNG"/></td>
+    </tr>
+    <tr>
+        <td align="center"><b>Repeat On</b><br/><img src="https://github.com/Ivan-RC/PiTunesPortfolio/blob/main/images/repeaton.PNG"/></td>
+        <td align="center"><b>Repeat Off</b><br/><img src="https://github.com/Ivan-RC/PiTunesPortfolio/blob/main/images/repeatoff.PNG"/></td>
+    </tr>
+    <tr>
+        <td align="center"><b>Set Volume</b><br/><img src="https://github.com/Ivan-RC/PiTunesPortfolio/blob/main/images/setvolume.PNG"/></td>
+        <td align="center"><b>Seek</b><br/><img src="https://github.com/Ivan-RC/PiTunesPortfolio/blob/main/images/setposition.PNG"/></td>
+    </tr>
+    <tr>
+        <td align="center"><b>Shuffle On</b><br/><img src="https://github.com/Ivan-RC/PiTunesPortfolio/blob/main/images/shuffleon.PNG"/></td>
+        <td align="center"><b>Shuffle Off</b><br/><img src="https://github.com/Ivan-RC/PiTunesPortfolio/blob/main/images/shuffleoff.PNG"/></td>
+    </tr>
 </table>
 
 Hardware
 --------------------------------
 - CanaKit Raspberry Pi 4 Model B
+    <br>
+    <img src="https://github.com/Ivan-RC/PiTunesPortfolio/blob/main/images/RaspberryPi.jpg"/></td>
     - 1.5GHz 64-bit quad-core CPU (4GB RAM)
     - Raspberry Pi 4 Case
     - Set of heat sinks
     - System fan
+
 - Mini USB Microphone (Adafruit Industries)
-- 3.5 mm jack
+    <br>
+    <img src="https://github.com/Ivan-RC/PiTunesPortfolio/blob/main/images/Microphone.jpg"/></td>
+- Aux cord
+    <br>
+    <img src="https://github.com/Ivan-RC/PiTunesPortfolio/blob/main/images/AuxCord.jpg"/></td>
 - Beats Pill Speaker
+<br>
+    <img src="https://github.com/Ivan-RC/PiTunesPortfolio/blob/main/images/Pill.jpg"/></td>
 
 Software
 --------------------------------
@@ -69,14 +94,12 @@ System Design
 ---------------------------------
 <table>
     <tr>
-        <td align="center"><b>Physical Architecture</b><br/><img src="https://github.com/Ivan-RC/PiTunesPortfolio/blob/main/images/physicaldiagram.PNG"/></td>
-        <td align="center"><b>Logical Architecture</b><br/><img src="https://github.com/Ivan-RC/PiTunesPortfolio/blob/main/images/logicaldiagram.PNG"/></td>
+        <td align="center"><b>Physical Architecture</b><br>
+            Below is the physical design of the project, it includes all the physical components that will make it work. The Raspberry Pi 4 Model B will have two peripherals connected to it, a microphone by Adafruit Industries, and a Beats Pill speaker. The microphone is very small, and through a USB interface, it works well with the Raspberry Pi OS. ¬The speaker has two separate connections, one to charge it, and the other to output the audio that will be playing on the device. Through a Wi-Fi connection, the Raspberry Pi will make calls out to the Google Cloud API every time the user speaks to it, and the YouTube Data API whenever the user requests that a song, album, or playlist, be played. 
+            <br/><img src="https://github.com/Ivan-RC/PiTunesPortfolio/blob/main/images/physicaldiagram.PNG"/></td>
+        <td align="center"><b>Logical Architecture</b><br>
+            Below is a high-level logical solution design, which depicts the APIs, modules, and libraries, and how these will all work together. The TextToSpeech module will communicate directly to the USB mic with the use of the ‘pyttsx3’ library, and Google Cloud’s Text-to-Speech API. The Utility module is where all the communication to the YouTube Data API is done. The communication to the API is done by using a wrapper called ‘python-youtube’. Anytime the user asks something that requires a call to the API, the Utility module will be used. In the same module, the song will be downloaded using the link specific to it which was returned from the call to the API. The library that will be used to do this is ‘yt-dlp (youtube-dl)’. On the other hand, the user can ask something that does not require a call to the API (i.e., changing the volume), in this case, the Utility module will be skipped, and the program will just use the Music module. In the Music module, the library used is ‘omxplayer-wrapper’. 
+            <br/><img src="https://github.com/Ivan-RC/PiTunesPortfolio/blob/main/images/logicaldiagram.PNG"/></td>
     </tr>
 </table>
-<!--
-    - Capable of running any number of Web Servers, common Web Stacks, Databases, and Tools. Examples include:
-        - Web Servers: Nginx and Apache (can be used to host  too)
-        - Web Stacks: PHP (7.1 and 7.4), PHP 7.4 Laravel, Java Tomcat (8.5 and 9.0), ASP.NET Core 5.0
-        - Databases: MySQL, PostgreSQL, MongoDB
-        - Tools: Visual Studio Code, NodeJS Development Server
-    - Deploy Web Sites, Java Spring and Spring Boot applications, PHP and PHP Laravel applications, Express, React, Angular applications-->
+
