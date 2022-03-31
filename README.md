@@ -62,7 +62,9 @@ Hardware
 --------------------------------
 - CanaKit Raspberry Pi 4 Model B
     <br>
-    <img src="https://github.com/Ivan-RC/PiTunesPortfolio/blob/main/images/RaspberryPi.jpg"/></td>
+    <img src="https://github.com/Ivan-RC/PiTunesPortfolio/blob/main/images/RaspberryPi.jpg"/></td><br>
+    <img src="https://github.com/Ivan-RC/PiTunesPortfolio/blob/main/images/RaspberryPiPorts1.jpg"/></td><br>
+    <img src="https://github.com/Ivan-RC/PiTunesPortfolio/blob/main/images/RaspberryPorts2.jpg"/></td><br>
     - 1.5GHz 64-bit quad-core CPU (4GB RAM)
     - Raspberry Pi 4 Case
     - Set of heat sinks
@@ -75,20 +77,24 @@ Hardware
     <br>
     <img src="https://github.com/Ivan-RC/PiTunesPortfolio/blob/main/images/AuxCord.jpg"/></td>
 - Beats Pill Speaker
-<br>
+    <br>
     <img src="https://github.com/Ivan-RC/PiTunesPortfolio/blob/main/images/Pill.jpg"/></td>
+- PiTunes
+    <br>
+    <img src="https://github.com/Ivan-RC/PiTunesPortfolio/blob/main/images/PiTunes.jpg"/></td>
 
 Software
 --------------------------------
 - Raspberry Pi OS (Raspbian)
 - PyCharm Community Edition (v2021.2.3)
 - Python 3.7
-- python-youtube (v0.8.1) 
-- omxplayer-wrapper (v0.3.3) 
-- yt-dlp (youtube-dl) 
-- pyttsx3 (v2.90)
-- YouTube Data API v3
-- Google Cloud’s text to speech API
+- Python application
+    - python-youtube (v0.8.1)
+    - omxplayer-wrapper (v0.3.3)
+    - yt-dlp (youtube-dl)
+    - pyttsx3 (v2.90)
+    - YouTube Data API v3
+    - Google Cloud’s text to speech API
 
 System Design
 ---------------------------------
