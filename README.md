@@ -61,15 +61,14 @@ Flowcharts
 Hardware
 --------------------------------
 - CanaKit Raspberry Pi 4 Model B
+- 1.5GHz 64-bit quad-core CPU (4GB RAM)
+- Raspberry Pi 4 Case
+- Set of heat sinks
+- System fan
     <br>
     <img src="https://github.com/Ivan-RC/PiTunesPortfolio/blob/main/images/RaspberryPi.jpg"/></td><br>
     <img src="https://github.com/Ivan-RC/PiTunesPortfolio/blob/main/images/RaspberryPiPorts1.jpg"/></td><br>
     <img src="https://github.com/Ivan-RC/PiTunesPortfolio/blob/main/images/RaspberryPorts2.jpg"/></td><br>
-    - 1.5GHz 64-bit quad-core CPU (4GB RAM)
-    - Raspberry Pi 4 Case
-    - Set of heat sinks
-    - System fan
-
 - Mini USB Microphone (Adafruit Industries)
     <br>
     <img src="https://github.com/Ivan-RC/PiTunesPortfolio/blob/main/images/Microphone.jpg"/></td>
