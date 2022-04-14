@@ -3,7 +3,7 @@
         <td align="center"><h1>PiTunes</h1></td>
     </tr>
     <tr>
-        <td align="center" colspan="3"><h3><i>The voice-controlled music player</i></h3></td>
+        <td align="center" colspan="3"><h3><i>A voice-controlled music player</i></h3></td>
     </tr>
 </table>
 
